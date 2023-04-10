@@ -1,6 +1,6 @@
 function getAddress() {
   var table = document.getElementById('tableCep');
-  var inputCep = document.getElementById('inputCep').value.replace("-","");
+  var inputCep = document.getElementById('inputCep').value.replaceAll("-","");
 
   tableClear(table);
   var newLine = table.insertRow();
